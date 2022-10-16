@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Adinarayan
+    given-names: Bharath Kumar
+title: "Automatic Lidar Camera Calibration"
+version: 0.0.1
+doi: https://github.com/Barath19/CaLiB
+date-released: 2022-10-16
