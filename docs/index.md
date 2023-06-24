@@ -1,3 +1,6 @@
+
+
+
 # CaLiB
 Automatic Lidar-Camera Extrinsic Calibration based on Natural Features in the environment.
 
@@ -96,11 +99,21 @@ end
 
 ### Small image
 
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
+<p align="center">
+ <a href="https://drive.google.com/file/d/16NdOv_DnqTnZuyejMnWwtg-25bPpuqwT/view?usp=sharing">
+  <img width="600" src="./assets/imgs/setup.jpg" alt="Video" />
+ </a>
+ <br>
+ Click the image for a quick demonstration!
+</p>
+
+
+
+![Octocat](./assets/imgs/setup.jpg){:height="36px" width="36px"}
 
 ### Large image
 
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
+![Branching](/home/bk/rnd/CaLiB/docs/assets/imgs/setup.jpeg)
 
 
 ### Definition lists can be used with HTML syntax.
