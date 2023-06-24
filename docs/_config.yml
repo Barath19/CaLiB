@@ -1,7 +1,7 @@
-title: AUtonamtic Camera LiDAR Calibration - Indoor dataset
+title: Automatic Camera LiDAR Calibration - Indoor dataset
 author:
   name: Barath19
-  email: your-email@domain.com
+  email: bharath.adinarayan@smail.inf.h-brs.de
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
