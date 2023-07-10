@@ -11,6 +11,10 @@
 The Hochschule-Bonn-Rhein-Sieg indoor dataset contains images and point clouds acquired in indoor for automatic camera-lidar calibration.
 Indoor dataset: contains 10 pairs of images and point clouds.
 
+<p align="center">
+  <img width="800" src="./assets/imgs/sample.jpg" alt="Video" />
+</p>
+
 
 ## Contact Information
 
