@@ -15,6 +15,10 @@ Indoor dataset: contains 10 pairs of images and point clouds.
   <img width="800" src="./assets/imgs/sample.jpg" alt="Video" />
 </p>
 
+<p align="center">
+  <img width="800" src="./assets/imgs/rviz.gif" alt="Video" />
+</p>
+
 
 ## Contact Information
 
