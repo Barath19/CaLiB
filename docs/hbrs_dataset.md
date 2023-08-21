@@ -19,6 +19,16 @@ Indoor dataset: contains 10 pairs of images and point clouds.
   <img width="800" src="./assets/imgs/rviz.gif" alt="Video" />
 </p>
 
+<p align="center">
+ <a href="https://drive.google.com/drive/folders/1-zJFR_l1g3Xb1Qisi3L9nzd-HC6ikifR?usp=drive_link">
+  <img width="440" src="./assets/imgs/rviz.gif" alt="Video" />
+ </a>
+ <br>
+ Click the image for a quick demonstration!
+</p>
+
+
+
 
 ## Contact Information
 
