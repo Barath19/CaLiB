@@ -19,7 +19,7 @@
 ### Installation 
 
 ```bash
-pip install calibration
+pip install calibration (coming soon...)
 ```
 
 
