@@ -20,13 +20,13 @@ rospy.init_node('lidar_and_cam_synchronizer')
 nh = rospy.get_namespace()
 
 # Get parameters or use default values
-root_output_dir = rospy.get_param("~root_output_dir", "/home/bk/rnd/HBRS-dataset/outputs")
+root_output_dir = rospy.get_param("~root_output_dir", "/home/bk/Study/RnD/HBRS-dataset/outputs")
 debug = rospy.get_param("~debug", False)
 
 # Create subscribers
-image_sub = Subscriber('/cam1/color/image_raw', Image)
-camera_info_sub = Subscriber('/cam1/color/camera_info', CameraInfo)
-point_cloud_sub = Subscriber('/cam2/depth/color/points', PointCloud2)
+image_sub = Subscriber('/camera/color/image_raw', Image)
+camera_info_sub = Subscriber('/camera/color/camera_info', CameraInfo)
+point_cloud_sub = Subscriber('/rslidar_points', PointCloud2)
 
 # Create synchronizer
 sync = ApproximateTimeSynchronizer([image_sub, camera_info_sub, point_cloud_sub], queue_size=10, slop=0.1)
@@ -54,6 +54,28 @@ def callback(image, camera_info, point_cloud):
 
     # Convert the point data to a numpy array
     points = np.array(list(pc2.read_points(point_cloud, field_names=("x", "y", "z", "intensity"), skip_nans=True)))
+
+    x = points[:, 0]
+    y = points[:, 1]
+    z = points[:, 2]
+    intensity = points[:, 3]
+
+    distance = np.sqrt(x**2 + y**2 + z**2)
+
+    # Calculate azimuth and elevation angles
+    azimuth = np.arctan2(y, x)  # arctan2 returns values in radians
+    elevation = np.arctan2(z, np.sqrt(x**2 + y**2))
+
+    # Define FOV limits (example: FOV between -45 and 45 degrees in azimuth and -10 to 10 degrees in elevation)
+    fov_azimuth_min, fov_azimuth_max = np.radians([-45, 45])
+    fov_elevation_min, fov_elevation_max = np.radians([-10, 10])
+
+    # Apply FOV filtering
+    fov_mask = np.logical_and(np.logical_and(azimuth >= fov_azimuth_min, azimuth <= fov_azimuth_max),
+                               np.logical_and(elevation >= fov_elevation_min, elevation <= fov_elevation_max))
+
+    points = points[fov_mask]
+
 
     # Save the point cloud as a .pcd file
     output_file = os.path.join(lidar_output_dir, f"lidar_{timestamp_str:.0f}_{timestamp.nsecs:0{fractional_second_digits}d}.pcd")
