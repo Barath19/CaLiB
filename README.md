@@ -1,5 +1,7 @@
 # CaLiB
 Automatic Lidar-Camera Extrinsic Calibration based on Natural Features in the environment.
+![](https://github.com/Barath19/CaLiB/blob/main/assets/projection.gif)
+
 
 ## Literature Review
 
@@ -10,3 +12,10 @@ Automatic Lidar-Camera Extrinsic Calibration based on Natural Features in the en
 5. [2021] LCCNet: LiDAR and Camera Self-Calibration using Cost Volume Network [[Paper]](https://arxiv.org/pdf/2012.13901.pdf) [[Code]](https://github.com/IIPCVLAB/LCCNet)
 6. [2019] CalibNet: Geometrically Supervised Extrinsic Calibration using 3D Spatial Transformer Networks [[Paper]](https://arxiv.org/pdf/1803.08181.pdf) [[Code]](https://github.com/epiception/CalibNet)
 7. [2012]  Automatic Targetless Extrinsic Calibration of a 3D Lidar and Camera by Maximizing Mutual Information [[Paper]](http://robots.engin.umich.edu/publications/gpandey-2012a.pdf) [[Code]](https://github.com/xmba15/automatic_lidar_camera_calibration)
+
+## Sensor Setup
+
+- RoboSense RS-16
+- Intel Realsense 435
+
+## 
