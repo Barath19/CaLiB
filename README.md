@@ -23,9 +23,9 @@ Automatic Lidar-Camera Extrinsic Calibration based on Natural Features in the en
 ```
 @unpublished{RnD2023Adinarayan,
             title = {Automatic Camera - LiDAR Extrinsic Calibration Based on Natural Features in the Environment},
-    author = {Adinarayan, Bharath Kumar},
-    year = {2023},
-    month = {September},
-    note = {WS2021, Houben, Huebel supervising}
+            author = {Adinarayan, Bharath Kumar},
+            year = {2023},
+            month = {September},
+            note = {WS2021, Houben, Huebel supervising}
 }
 ```
