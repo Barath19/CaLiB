@@ -18,4 +18,14 @@ Automatic Lidar-Camera Extrinsic Calibration based on Natural Features in the en
 - RoboSense RS-16
 - Intel Realsense 435
 
-## 
+## Citation
+
+```
+@unpublished{RnD2023Adinarayan,
+            title = {Automatic Camera - LiDAR Extrinsic Calibration Based on Natural Features in the Environment},
+    author = {Adinarayan, Bharath Kumar},
+    year = {2023},
+    month = {September},
+    note = {WS2021, Houben, Huebel}
+}
+```
